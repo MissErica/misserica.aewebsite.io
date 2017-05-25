@@ -1,0 +1,564 @@
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.body-style {
+   
+    color: black;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    overflow-x: hidden;
+   
+    
+}
+
+.body-background{
+     background-image: url(images/background.png);
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .body-mobile{
+        background-color: white;
+        width: 100%;
+    }
+}
+    
+
+
+
+
+#headstrip {
+    margin-top: -15px;
+    width:100%;
+    
+    
+}
+
+/*---top portion and content of page---*/
+
+.toprow {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 10pt;
+    color: #989898;
+    padding-top: 7px;
+    width: 100%;
+    
+}
+
+.toprow a{
+    border-right: 1px solid #e6e6e6;
+    padding: 1%;
+    
+}
+
+
+
+
+ #topright{
+        display: inline;
+        text-decoration: none;
+        float: right;
+     
+    }
+
+.seperator{
+    border-right: 1px solid #e6e6e6;
+    float:right;
+}
+
+
+a {
+    color: inherit;
+}
+
+.pink-button {
+    font-size: 9pt;
+    background: -webkit-linear-gradient(white, #ffe9e9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #ffe9e9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #ffe9e9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #ffe9e9); /* Standard syntax */
+      border-style: double;
+    font-size: 8pt;
+    margin: 0 auto;
+    font-weight: 300;
+     font-family: 'Droid Serif', serif;
+    
+}
+
+.toprow-mobile{
+    display: none;
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 12pt;
+    color: #989898;
+    
+}
+.toprow-mobile span {
+    color: black;
+    float: right;
+    font-size: 1.3em
+    
+}
+
+
+
+@media screen and (max-width: 768px){
+    .hide-row {
+        display: none ;
+    }
+    
+}
+
+@media screen and (max-width: 768px)
+    and (min-width: 400px){
+    .toprow-mobile {
+        display: block;
+        
+    }
+    
+}
+
+
+.registry-login{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .registry-login{
+        display: block;
+        font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 12pt;
+    color: #989898;
+        text-align: center;
+    margin-top: 10px
+        
+        
+    }
+    
+}
+
+/*---styling for entire center of page---*/
+
+.wholecenter {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-top: -10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:#e2e2e2;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .wholecenter{
+        width:100%;
+        padding: 0%;
+        margin: 0%;
+        border-width: 0%;
+        border-style: none;
+        border-color: none;
+        margin: auto;
+        background-color: white;
+        
+    }
+   
+}
+
+
+/*--styling for logo and search box --*/
+
+
+@media screen and (max-width: 768px){
+    .hide-children{
+        display: none;
+    }
+}
+
+
+
+
+
+/*
+#logo{
+        max-width:100%;
+    height: 0 auto;
+    display: block;
+    
+    
+  
+}
+*/
+
+
+.searchthis{
+    float:right;
+    position:relative;
+    min-height: 30px;
+    
+    
+    
+}
+input.searchthis{
+    background-color: #eaeaea;
+    background: -webkit-linear-gradient(#eaeaea, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #eaeaea, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #eaeaea, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #eaeaea, white); /* Standard syntax */
+    font-style: italic;
+    
+    
+}
+
+h3{
+    font-family:'Allura', cursive;
+    text-align: center;
+    float: left;
+    margin-top: -8px;
+    max-width: 100%;
+    
+
+}
+
+.main-row{
+    margin-bottom: 20px;
+}
+
+.hrtwo{
+    background-color:#cfcfcf;
+    height:1px;
+    margin:auto
+}
+
+
+
+
+/*---navigation---*/
+
+.navigation{
+    font-size: 9pt;
+    font-family: 'Droid Serif', serif;
+    margin: auto;
+    width: 100%;
+    background-color:white;
+    
+    
+    
+}
+
+
+
+nav li a{
+    width: auto;
+    margin: auto;
+    
+}
+
+.dropdown:hover .dropdown-menu {
+    display:block;
+}
+
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: 
+    }
+}
+
+
+/*---center image and content---*/
+
+#bedding{
+    width:100%;
+    height: 360px;
+}
+
+center-image-mobile img{
+    display: none; 
+    
+    
+}
+
+.center-image{
+    position: relative;
+    height:100%;
+    
+    
+}
+
+.center-image-mobile{
+    display: none;
+    
+}
+@media screen and (max-width: 768px){
+    .center-image{
+        display: none;
+    }
+    .center-image-mobile {
+        display: block;
+        width: 100%;
+      
+        
+    }
+}
+
+
+.inner-box{
+    position:absolute;
+    top: 50%;
+    background: rgba(255,255,255,.7);
+    height: 360px;
+    left:85%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    padding:35px;
+    text-align: center;
+    float: right;
+}
+.sale{
+    margin-top: -20px;
+    color: #7594b7;
+    font-family: 'Droid Serif', serif;
+    font-size:35px;
+    
+}
+
+h4{
+    margin-top: -10px;
+    font-family:'Allura', cursive;
+    font-size: 20pt;
+    margin-bottom: -10px;
+}
+
+.beddingbtn{
+    font-size: 8pt;
+    margin: auto;
+    
+     font-family: 'Droid Serif', serif;
+    
+}
+
+
+.bedding-sale-mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .bedding-sale-mobile{
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    
+    .sale-mobile{
+        
+      
+      color: #7594b7;
+    font-family: 'Droid Serif', serif;
+    font-size:35px;  
+    
+    
+    }
+}
+
+/*---featured products section with images---*/
+
+.products{
+    margin-top: 2%;
+    display: block;
+    
+    
+}
+
+
+
+.featured{
+    font-family: 'Droid Serif', serif;
+    color: #7594b7;
+    font-size:35px;
+    text-align: center;
+}
+
+.lorem{
+        font-family:'Allura', cursive;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.2;
+
+}
+
+.featured-div{
+    text-align: center;
+    padding: 2%;
+    
+    
+}
+.see-allbtn{
+     font-size: 8pt;
+    background-color: #ffecec;
+    border-style: double;
+     font-family: 'Droid Serif', serif;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    
+    
+        
+   
+}
+
+.img-hover:hover{
+    color: #eeeeee;
+}
+
+.descriptions{
+    font-family: 'Droid Serif', serif;
+    text-align: center;
+}
+
+/*---about us section of text---*/
+
+.babylove{
+     font-family: 'Droid Serif', serif;
+    color: #7594b7;
+    font-size: 35px;
+}
+.paragraph{
+        font-family: 'Droid Serif', serif;
+font-size:10pt;
+    
+}
+.loveus{
+            font-family:'Allura', cursive;
+    text-align: right;
+    font-size:24px;
+
+}
+
+/*---bottom navigation panels---*/
+
+.bottom-nav-panels{
+    background-color: #f3f3f3;
+}
+
+div.col-sm-7.five-three {
+  width: 50% !important;
+    padding-left:10px;
+    
+}
+div.col-sm-5.five-two {
+  width: 50% !important;
+    
+}
+
+/*---footer with copyright info and logos---*/
+.footer-style{
+                font-family: 'Droid Serif', serif;
+font-size: 8pt;
+    line-height: 3em;
+    width: 100%;
+    
+    
+}
+
+.social-media>a{
+    padding: 3px;
+    
+}
+
+.footer-color-strip{
+    
+    width: 100%;
+    
+    
+}
+
+
+.copyright{
+    
+    font-family: 'Droid Serif', serif;
+    color: #999999;
+    font-size: 12px;
+    line-height: 2.0em;
+    margin-left:10%;
+    
+    
+}
+
+.copyright-mobile a{
+    
+     border-right: 1px solid #b8b8b8;
+    padding-right: 5px;
+    padding-left: 3px;
+}
+
+.powered-by-mobile{
+    margin-top: 20px
+}
+
+
+.bottom-mobile{
+    display: none;
+    line-height: 1.7em;
+    font-family: 'Droid Serif', serif;
+    color: #b8b8b8;
+    
+    font-size: 12px;
+    
+}
+
+#bottom-mobile-logo{
+    padding-bottom: 10px;
+    
+}
+
+@media screen and (max-width: 768px){
+    .bottom-mobile{
+        display: block;
+        text-align: center;
+    
+    }
+    .bottom-info{
+        display: none;
+    }
+}
