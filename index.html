@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   
     <title>Beautiful Beginnings</title>
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -15,12 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Amiri|Droid+Serif" rel="stylesheet">
     <script src="https://use.fontawesome.com/ce0d476e0d.js"></script>
      <script src="scripts.js" type="text/javascript"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
 </head>
 
     
@@ -59,50 +54,49 @@
                 
                   <span class="toprow"> 
                       <div id="topright">
-              <a href="#" >Baby Registry</a> 
-                <a href="#"> Login/Register</a>
-                 <a href="#">5 items</a>
+              <a href="#" style="border-right: 1px solid #e6e6e6;
+    padding: 1%;" >Baby Registry</a> 
+                <a href="#" style=" border-right: 1px solid #e6e6e6;
+    padding: 1%;"> Login/Register</a>
+                          
+                 <a href="#">5 items &bull; </a>
                  <a href="#">Check out</a>
-<a href="#"><strong style="color: #333333">$2103.92</strong></a>
+<a href="#"><strong style="color: #333333; font-weight: 700px;">$2103.92</strong></a>
                           </div>
                  </span> </span>
             
             </div>
             
-            
+            <!--mobile top row view with cart and collapsed menu-->
             
             <div class="toprow-mobile">
             Call us at: <strong style="color: #666666"> 708-246-1212 </strong>
-                <a href="#">
-                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-            </a>
-            </div>
-            
-            
-           
-
-<!--
-            <div style="display:inline-block"> 
-            <div>
+                 
+                 
+                 
+                <button type="button" data-toggle="dropdown" class=" dropdown-toggle">
+<!--                 <span class="sr-only">Toggle navigation</span>-->
+                    <span class="glyphicon glyphicon-menu-hamburger"></span></button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                      
+                      
+                     <li><a href="#">Stuff</a> </li> 
+                      <li><a href="#">Stuff</a> </li> 
+                    
+                </ul>
                 
-            Call us at: <strong style="color: #666666"> 708-246-1212 </strong>
+                
+                <a href="#">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+            </a>
+                
+                    
+             </div>
             
-            </div>
             
-            <div class="toprow">
-             <button  type="button" class="pink-button"> LIVE CHAT NOW </button> 
-            </div>
-            
-            <span id="topright"> 
-              <a href="#" >Baby Registry</a> 
-                <a href="#"> Login/Register</a>
-                 <a href="#">5 items</a>
-                 <a href="#">Check out</a>
-<a href="#"><strong style="color: #333333">$ 2103.92</strong></a>
-                 </span
-            </div>
-            
--->
+           <!--start of top row with logo and search box-->
+
+
             <hr style="background-color: #e6e6e6">
             
             <div class="main-row"> 
@@ -117,7 +111,10 @@
                       <img style="max-width: 100%; margin: 0 auto;" src="images/bblogo.png">
                 </div>
                   <div class="col-md-4 hidden-sm">
-                     <input type="text" class="hide-children searchthis" placeholder="Search this site..." />
+                      <div class="hide-children searchthis">
+                     <input type="text"  placeholder="Search this site..."/>
+                          <span><i class="glyphicon glyphicon-search"></i> </span>
+                          </div>
                 </div>
                   
                
@@ -127,6 +124,7 @@
             
             </div>
             </div>
+                             <hr class="hrone">
             
             <!--mobile login-->
            
@@ -134,8 +132,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-6">
-                        <a href="#"> Baby Registry</a>
+                        <a href="#"> Baby Registry<span class="divider"></span></a>
                     </div>
+                    
                     
                         
                     <div class="col-xs-6">
@@ -144,17 +143,18 @@
                 </div>
             
             </div>
+                 <hr class="hrtwo">
                 </div>
 
             
-            <hr class="hrtwo">
+
             
             
             <!--NAVIGATION-->
             
             
             <div class="menu"> 
-            <nav class="navbar navbar-default">
+            <nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -196,61 +196,6 @@
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-<!--
-            <nav>
-            <div class="container">
-                
-                
-                
-            <div class="navigation" role="navigation">
-            
-            <ul class="nav nav-pills">
-  <li role="presentation" ><a href="#">BABY APPAREL</a></li>
-  <li role="presentation"><a href="#">BABY GIFTS</a></li>
-              
-  <li role="presentation" ><a href="#" data-toggle="dropdown" class="dropdown">CHRISTENING</a>
-      
-      
-                <ul class="dropdown-menu">
-      <li><a href="#">Silver</a></li>
-         <li role="separator" class="divider"></li>
-        <li><a href="#">All Christening</a></li>
-      
-      </ul>
-                
-                 
-                
-                </li>
-                
-<li role="presentation"><a href="#">FURNITURE</a></li>
-  <li role="presentation"><a href="#">BEDDING</a></li>
-  <li role="presentation"><a href="#">DECOR</a></li>
-  <li role="presentation" ><a href="#">LIGHTING</a></li>
-  <li role="presentation"><a href="#">SALE</a></li>
-  <li role="presentation"><a href="#">BRANDS</a></li>
-</ul>
-            
-            </div>
-                </div>
-                </nav>
-            
-            
--->
-            
-            
            <!--center-main image--> 
             
             
@@ -273,7 +218,7 @@
             
             <div class="container-fluid"> 
             <div class="center-image-mobile">
-                <img style="max-width: 100%; height: auto;" src="images/babyfeet2.png">
+                <img style="max-width: 100%; height: 180px;" src="images/babyfeet2.png">
             </div>
             </div>
             
@@ -380,9 +325,7 @@ To receive a gift from Beautiful Beginnings is a new mom’s biggest wish. There
          <span style="color:#7594b7; font-family: 'Droid Serif', serif; font-size: 20px;"> About Us</span>
             <div class="footer-style">
                 <div class="about-us">
-                    <button type="button" data-toggle="collapse">
-                    <span class="icon-bar"></span></button>
-            
+                    
                 <a href="#">OUR STORY</a> <br>
                <a href="#">BABY REGISTRY</a> <br>
                 <a href="#">STORE LOCATION</a><br>
@@ -465,8 +408,9 @@ To receive a gift from Beautiful Beginnings is a new mom’s biggest wish. There
             <span style="color:#7594b7; font-family: 'Droid Serif', serif; font-size: 20px;">Newsletter</span>
             <br>
             <div style="font-family: 'Droid Serif', serif; font-style: italic; font-size: 12px;">
-            <p><em>Get the latest promotions and special offers delivered directy to your inbox!</em></p>
+            <p><em>Get the latest promotions and special offers delivered directy to your inbox!</em></p></div>
             <br>
+            <div class="newsletter">
             <input type="email" class="searchthis" placeholder="Email Address..."><button class="pink-button" type="submit">SEND</button></div>
         </div>
       </div>
@@ -475,15 +419,135 @@ To receive a gift from Beautiful Beginnings is a new mom’s biggest wish. There
 </div>
                 </div>
  </div>
-                <br><br>
+                 <br>
+                 
+                 
+                 
+                 
+                 
+                 <!-- mobile footer navigation collapse panels-->
+                 
+                <div class="footer-mobile">
+                
+                    <div class="top-half">   
+                    <div data-toggle="collapse" data-target="#list1" aria-expanded="false"><h2>About Us<span>+</span></h2></div>
+                    
+                    <div id="list1" class="collapse">
+                        <a href="#">OUR STORY</a> <br>
+               <a href="#">BABY REGISTRY</a> <br>
+                <a href="#">STORE LOCATION</a><br>
+                <a href="#">TESTIMONIALS</a><br>
+                    
+                    
+                    </div>
+                    <hr class="hrtwo">
+                    
+                    <div> 
+                  <div data-toggle="collapse" data-target="#list2" aria-expanded="false"><h2>Service<span>+</span></h2></div>
+                                            
+
+                    <div id="list2" class="collapse">
+                        <a href="#">CONTACT US</a> <br>
+               <a href="#">ORDER STATUS</a> <br>
+                <a href="#">FAQ</a><br>
+                <a href="#">SHIPPING POLICY</a><br>
+                  <a href="#">RETURN POLICY</a> <br>
+               <a href="#">NEWSLETTER</a> <br>
+                <a href="#">MY ACCOUNT</a><br>
+                <a href="#">LIVE CHAT</a><br>
+                    
+                    </div>
+                    </div>
+                    <hr class="hrtwo">
+                    
+                    <div>
+                    <div data-toggle="collapse" data-target="#list3" aria-expanded="false"><h2>Shop<span>+</span></h2></div>
+                        <div id="list3" class="collapse">
+                                                
+
+                            <a href="#">BABY APPAREL</a> <br>
+               <a href="#">BABY GIFTS</a> <br>
+                <a href="#">CHRISTENING</a><br>
+                <a href="#">FURNITURE</a><br>
+                  <a href="#">BEDDING</a> <br>
+               <a href="#">DECOR</a> <br>
+                <a href="#">LIGHTING</a><br>
+                <a href="#">SALE</a><br>
+                <a href="#">BRANDS</a><br>
+                        
+                        </div>
+                        </div>  
+                        <hr class="hrtwo">
+                       </div>
+                 
+                 
+                    <div class="bottom-half"> 
+                    
+                    <span style="color:#7594b7; font-family: 'Droid Serif', serif; font-size: 24px;"> Contact Us</span><br>
+                    
+            <div class="footer-style">
+                <address>
+                    BEAUTIFUL BEGINNINGS <br>
+                    4472 Lawn Avenue
+                    Western Springs, IL 60558 <br><br>
+                    708.246.1212 <br><br>
+                    STORE HOURS: <br>
+                    Monday-Friday 10am-5:30pm<br>
+                    Saturday - 10am-5pm<br>
+                    Sunday - Closed
+                </address>
+                 
+                 </div>
+                    
+                 
+                   <span style="color:#7594b7; font-family: 'Droid Serif', serif; font-size: 24px;">Follow Us</span> <br>
+                    
+            <div class="footer-social"> 
+           <a href="http://www.facebook.com"> <img src="facebook.png"></a>
+            <a href="http://www.pinterest.com"><img src="pinterest.png"></a>
+                           <a href="http://www.twitter.com"> <img src="twitter.png"></a>
+
+            <a href="http://www.youtube.com"><img src="youtube.png"></a>
+            <a href="http://www.plus.google.com"><img src="google-plus.png"></a>
+                
             
-                <div class="container-fluid"> 
-                <div class="footer-color-strip"> 
+                </div>  
+                    
+                    <div>
+                        
+            <span style="color:#7594b7; font-family: 'Droid Serif', serif; font-size: 20px;">Newsletter</span>
+            
+                        
+            <div>
+            <p style="font-family: 'Droid Serif', serif; font-style: italic; font-size: 12px; line-height: 2">Get the latest promotions and special offers<br> delivered directy to your inbox!</p>
+                
+                
+                </div>
+            
+                
+                <span style="width: 100%"> 
+            <input class="mobile-email-input" type="email" placeholder="Email Address..."><button class="mobile-send-button" type="submit">SEND</button>
+                        </span>
+                
+                
+                </div>
+                
+                 
+                 </div>
+                 
+                    <!--end of mobile for nav panels-->
+               
+                <br>
+            
+                
+                
+        </div>
+                 
+                 <div class="footer-color-strip"> 
                <img style="width: 100%;" src="images/footercolors.png"> 
             
            </div>
-        </div>
-        </div>
+        
         <br>
         
         
@@ -517,7 +581,7 @@ To receive a gift from Beautiful Beginnings is a new mom’s biggest wish. There
             </div>
         </div>
         
-        <!-- bottom panel mobile -->
+        <!-- bottom info mobile -->
 
         <div class="bottom-mobile">
         
@@ -529,16 +593,19 @@ To receive a gift from Beautiful Beginnings is a new mom’s biggest wish. There
                 
                 <div class="copyright-mobile" >
                  &copy;2013 Beautiful Beginnings. All Rights Reserved<br>
-                    
+                   
                     <a href="#">Site Map</a>
                     <a href="#"> Privacy Policy</a>
-                    <a href="#"> Terms & Conditions</a> <br>
+                   
+                    <a href="#"> Terms & Conditions</a>
+                     </div>
+                    <br>
                 
-                </div>
+                
                 
                 <div class="powered-by-mobile">
                 <span style="color: #323232" class="glyphicon glyphicon-off"></span>
-                       <span style="font-family: 'Open Sans Condensed', sans-serif; color: #999999"> Powered By:</span> <a href="#">
+                       <span style="font-family: 'Open Sans Condensed', sans-serif; color: #999999; font-weight: 500"><strong>POWERED BY:</strong> </span> <a href="#">
                         <img style="color:#323232" src="images/aelogo.png">
                         </a>
                 </div>

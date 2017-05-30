@@ -54,6 +54,7 @@
     .body-mobile{
         background-color: white;
         width: 100%;
+        padding: 0;
     }
 }
     
@@ -68,6 +69,12 @@
     
 }
 
+@media screen and (max-width: 768px){
+    #headstrip{
+        width: 100%;
+        height: 7px;
+    }
+}
 /*---top portion and content of page---*/
 
 .toprow {
@@ -80,11 +87,13 @@
     
 }
 
+/*
 .toprow a{
     border-right: 1px solid #e6e6e6;
     padding: 1%;
     
 }
+*/
 
 
 
@@ -92,13 +101,15 @@
  #topright{
         display: inline;
         text-decoration: none;
-        float: right;
+        margin-left: 20%;
+        padding: 10px;
      
     }
 
 .seperator{
     border-right: 1px solid #e6e6e6;
     float:right;
+    
 }
 
 
@@ -107,19 +118,27 @@ a {
 }
 
 .pink-button {
-    font-size: 9pt;
+    font-size: 8pt;
     background: -webkit-linear-gradient(white, #ffe9e9); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(white, #ffe9e9); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(white, #ffe9e9); /* For Firefox 3.6 to 15 */
     background: linear-gradient(white, #ffe9e9); /* Standard syntax */
       border-style: double;
-    font-size: 8pt;
-    margin: 0 auto;
+    border-width: medium;
+   
+    margin-left: 10px;
+    padding: 10px;
     font-weight: 300;
      font-family: 'Droid Serif', serif;
     
+    
 }
 
+#topright a{
+    padding-right: 10px;
+    
+    
+}
 .toprow-mobile{
     display: none;
     font-family: 'Droid Serif', serif;
@@ -128,11 +147,43 @@ a {
     color: #989898;
     
 }
-.toprow-mobile span {
+.toprow-mobile a{
+    color: black;
+    
+    float: right;
+    font-size: 1.3em;
+    padding-left:3% ;
+   
+    
+}
+
+.toprow-mobile button{
     color: black;
     float: right;
-    font-size: 1.3em
+    padding-left: 3%;
     
+    font-size: 18pt; 
+    background-color: white;
+    border: none;
+}
+
+.dropdown-menu li {
+    
+    
+     font-size: 8pt;
+ 
+    text-align: left;
+    color: black;
+    
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .hrone{
+        display: none;
+    }
 }
 
 
@@ -144,8 +195,7 @@ a {
     
 }
 
-@media screen and (max-width: 768px)
-    and (min-width: 400px){
+@media screen and (max-width: 768px){
     .toprow-mobile {
         display: block;
         
@@ -158,6 +208,14 @@ a {
     display: none;
 }
 
+.divider{
+    border-right: 1px solid #e6e6e6;
+   text-align: center;
+margin-left: 29%;
+    
+    
+}
+
 @media screen and (max-width: 768px){
     .registry-login{
         display: block;
@@ -166,11 +224,14 @@ a {
     font-size: 12pt;
     color: #989898;
         text-align: center;
-    margin-top: 10px
+    margin-top: 10px;
+        line-height: 2;
         
         
     }
-    
+    .registry-login hr{
+        display: none;
+    }
 }
 
 /*---styling for entire center of page---*/
@@ -218,22 +279,18 @@ a {
 
 
 
-/*
-#logo{
-        max-width:100%;
-    height: 0 auto;
-    display: block;
-    
-    
-  
-}
-*/
+
 
 
 .searchthis{
     float:right;
     position:relative;
     min-height: 30px;
+    border-style: double;
+    border-width: medium;
+    border-color: #d6d6d6;
+    padding: 5px
+    
     
     
     
@@ -300,7 +357,7 @@ nav li a{
 
 @media screen and (max-width: 768px){
     .menu{
-        display: 
+        display: none;
     }
 }
 
@@ -333,9 +390,10 @@ center-image-mobile img{
     .center-image{
         display: none;
     }
-    .center-image-mobile {
+    .center-image-mobile{
         display: block;
         width: 100%;
+        margin-top: 10%;
       
         
     }
@@ -359,21 +417,15 @@ center-image-mobile img{
     color: #7594b7;
     font-family: 'Droid Serif', serif;
     font-size:35px;
+    line-height: 1.2;
+    
     
 }
 
 h4{
     margin-top: -10px;
     font-family:'Allura', cursive;
-    font-size: 20pt;
-    margin-bottom: -10px;
-}
-
-.beddingbtn{
-    font-size: 8pt;
-    margin: auto;
-    
-     font-family: 'Droid Serif', serif;
+    font-size: 18pt;
     
 }
 
@@ -436,11 +488,17 @@ h4{
 }
 .see-allbtn{
      font-size: 8pt;
-    background-color: #ffecec;
+   
     border-style: double;
+    border-width: medium;
+    padding: 3%;
      font-family: 'Droid Serif', serif;
     margin-top: 8%;
     margin-bottom: 10%;
+    background: -webkit-linear-gradient(white, #ffe9e9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #ffe9e9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #ffe9e9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #ffe9e9); /* Standard syntax */
     
     
         
@@ -475,6 +533,12 @@ font-size:10pt;
 
 }
 
+@media screen and (max-width: 768px){
+    .paragraph a{
+        text-decoration: underline;
+    }
+}
+
 /*---bottom navigation panels---*/
 
 .bottom-nav-panels{
@@ -491,10 +555,70 @@ div.col-sm-5.five-two {
     
 }
 
+.footer-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .footer-mobile{
+        display: block;
+        width: 100%;
+        background-color: #eaeaea;
+    background: -webkit-linear-gradient(#eaeaea, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #eaeaea, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #eaeaea, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #eaeaea, white); /* Standard syntax */
+    }
+    .footer-mobile{
+        width: 100%;
+        padding: 0px;
+        margin: 0 auto;
+        line-height: 3.5;
+    }
+    .bottom-nav-panels{
+        display: none;
+    }
+    #footer-nav{
+        display:block;
+        width:100%;
+    }
+}
+
+.footer-social{
+    width: 100%;
+    display: block;
+    
+}
+.footer-social a{
+   padding-right: 10%;
+    padding-left: 1%;
+   
+    
+    
+}
+
+.newsletter input{
+    width: 65%;
+    float: left;
+                    font-family: 'Droid Serif', serif;
+    font-size: 10pt;
+
+}
+
+.newsletter button{
+    width: 25%;
+    padding: 3%
+}
+
+.newsletter-mobile{
+    text-align:
+    
+}
+
 /*---footer with copyright info and logos---*/
 .footer-style{
                 font-family: 'Droid Serif', serif;
-font-size: 8pt;
+font-size: 10pt;
     line-height: 3em;
     width: 100%;
     
@@ -513,6 +637,12 @@ font-size: 8pt;
     
 }
 
+@media screen and (max-width: 768px){
+    .footer-color-strip img{
+        width: 100%;
+        height:12px;
+    }
+}
 
 .copyright{
     
@@ -534,6 +664,10 @@ font-size: 8pt;
 
 .powered-by-mobile{
     margin-top: 20px
+}
+
+.powered-by-mobile img{
+    margin-bottom: .5%;
 }
 
 
@@ -561,4 +695,78 @@ font-size: 8pt;
     .bottom-info{
         display: none;
     }
+}
+
+
+.bottom-half{
+    background-color: white;
+}
+
+.top-half{
+    
+     background-color: #eaeaea;
+    background: -webkit-linear-gradient(#eaeaea, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #eaeaea, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #eaeaea, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #eaeaea, white); /* Standard syntax */
+    
+}
+
+.top-half h2{
+        font-family: 'Droid Serif', serif;
+    font-size: 24px;
+     color: #7594b7;
+    line-height: 1.5;
+    padding-left: 2%;
+   
+    
+    
+
+}
+
+.top-half h2 span{
+    float: right;
+    font-size: 40px;
+    padding-right: 5%;
+}
+
+.top-half a{
+            font-family: 'Droid Serif', serif;
+    font-size: 12px;
+    line-height: .5;
+    
+
+}
+
+.mobile-email-input{
+    background-color: #eaeaea;
+    background: -webkit-linear-gradient(#eaeaea, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #eaeaea, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #eaeaea, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #eaeaea, white); /* Standard syntax */
+    width: 70%;
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    border-style: double;
+    border-width: medium;
+    padding-left: 2%;
+        border-color: #d6d6d6;
+
+    
+    
+    
+    
+}
+
+.mobile-send-button{
+     background: -webkit-linear-gradient(white, #ffe9e9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #ffe9e9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #ffe9e9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #ffe9e9); /* Standard syntax */
+      border-style: double;
+    border-width: medium;
+     font-family: 'Droid Serif', serif;
+    border-color: #d6d6d6;
+    width: 20%;
+    margin-left: 5%;
 }
