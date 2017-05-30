@@ -627,11 +627,8 @@ font-size: 10pt;
     
 }
 
-.footer-color-strip{
-   
-   
-    
-    
+.footer-color-mobile{
+    display: none;
 }
 
 @media screen and (max-width: 768px){
